@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="Newcss.css" />
+  <script defer src="Newjs.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="header-left">
+        <div class="hamburger" id="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <span class="my-name">Gandhar</span>
+      </div>
+      <div class="next-button" id="nextBtn">Next</div>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact Me</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="section active">
+        <h1>Welcome to my portfolio</h1>
+        <div class="explore-box" data-target="#about">Explore my portfolio</div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <img src="Intro.jpg" alt="My Photo" class="profile-pic" />
+          <p>Hello and welcome! I’m Gandhar Chafle, a first-year undergraduate student at the MIT Academy of Engineering in the Computer Science branch, specialising in Artificial Intelligence and Machine Learning with a keen interest. Hailing from the tranquil town of Wardha, I’ve built a strong academic foundation through dedication and curiosity, scoring 88.4% in my 10th and 81.67% in my 12th. My journey so far has been fueled by an eagerness to explore how intelligent systems shape our world, and I’ve actively pursued this passion by participating in competitive exams like CET, where I secured a 95.43 percentile. With a mindset geared toward innovation and continuous learning, I’m always looking for opportunities to grow and challenge myself.</p>
+          <p>Beyond academics, I find joy in tactical games that push my strategic thinking, diving into emerging technologies, and getting lost in the world of novels. I believe in learning through doing—be it exploring new programming paradigms, or analyzing real-world tech applications. My portfolio reflects not just my skills, but also my journey, experiments, and aspirations. Feel free to explore it, and get a glimpse into the mind of someone who’s not just preparing for the future, but helping shape it.</p>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-section">
+          <h3>Apps</h3>
+          <div class="skills-container apps">
+            <div class="skill-box"><img src="Olapcube.png" alt="Olabcub" /> Olabcub</div>
+            <div class="skill-box"><img src="Tableau.png" alt="Tableau" /> Tableau</div>
+            <div class="skill-box"><img src="Orange.jpg" alt="Orange" /> Orange</div>
+            <div class="skill-box"><img src="Chatgpt.png" alt="ChatGPT" /> ChatGPT</div>
+          </div>
+          <h3>Languages</h3>
+          <div class="skills-container">
+            <div class="flip-box">
+              <div class="flip-inner">
+                <div class="flip-front">C</div>
+                <div class="flip-back"><img src="coming.webp" alt="C Certificate" /></div>
+              </div>
+            </div>
+            <div class="flip-box">
+              <div class="flip-inner">
+                <div class="flip-front">C++</div>
+                <div class="flip-back"><img src="coming.webp" alt="C++ Certificate" /></div>
+              </div>
+            </div>
+            <div class="flip-box">
+              <div class="flip-inner">
+                <div class="flip-front">Python</div>
+                <div class="flip-back"><img src="pycert.png" alt="Python Certificate" /></div>
+              </div>
+            </div>
+            <div class="flip-box">
+              <div class="flip-inner">
+                <div class="flip-front">SQL</div>
+                <div class="flip-back"><img src="sqlcert.png" alt="SQL Certificate" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="project-boxes">
+          <h3 class="project-card">AI travel Agent</h3>
+            <p>I developed an AI-powered chatbot assistant tailored for a travel company, designed to streamline customer interactions by providing instant support with itinerary planning, booking assistance, destination recommendations, and FAQs. This intelligent assistant enhances user experience by offering personalized and efficient responses, significantly reducing response time and increasing customer satisfaction.<p>
+          <h3 class="project-card">Hotel Data Analysing</h3>
+            <p>Conducted a comprehensive analysis of a hotel management dataset to uncover key insights related to guest behavior, booking trends, occupancy rates, and revenue performance. Leveraged data visualization and statistical techniques to identify patterns such as peak booking periods, customer preferences, and factors influencing cancellations. The analysis provided actionable recommendations to optimize pricing strategies, enhance guest satisfaction, and improve operational efficiency.<p>
+          <h3 class="project-card">Dasboard on Toy company stats</h3>
+            <p>Designed and developed an interactive dashboard to visualize key statistics for a toy company, enabling real-time insights into sales performance, inventory levels, customer demographics, and regional demand trends. The dashboard streamlined data interpretation for stakeholders, facilitating data-driven decisions to optimize product distribution, marketing strategies, and supply chain management.<p>
+            
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+        <div class="social-icons">
+          <a href="https://www.geeksforgeeks.org/user/gandharir5s/" target="_blank"><img src="GFG.jpg" alt="GfG" /></a>
+          <a href="https://www.linkedin.com/in/gandhar-chafle-8611a1318/" target="_blank"><img src="Linkedin.png" alt="LinkedIn" /></a>
+          <a href="https://github.com/Gandhar1606" target="_blank"><img src="Github.png" alt="GitHub" /></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-icons">
+        <a href="https://www.geeksforgeeks.org/user/gandharir5s/" target="_blank"><img src="GFG.jpg" alt="GfG" /></a>
+        <a href="https://www.linkedin.com/in/gandhar-chafle-8611a1318/" target="_blank"><img src="Linkedin.png" alt="LinkedIn" /></a>
+        <a href="https://github.com/Gandhar1606" target="_blank"><img src="Github.png" alt="GitHub" /></a>
+      </div>
+      <p>Website visit count: <span class="website-counter">0</span></p>
+    </footer>
+  </div>
+</body>
+</html>
